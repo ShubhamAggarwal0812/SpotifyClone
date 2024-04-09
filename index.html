@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Web Player: Music for everyone</title>
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to utility stylesheet -->
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Left section -->
+        <div class="left">
+            <!-- Home and search navigation -->
+            <div class="home">
+                <!-- Spotify logo and close button -->
+                <div class="logo-close">
+                    <img src="Images/logo.svg" alt="spotify-logo">
+                    <img class="close" src="Images/close.svg">
+                </div>
+                <!-- Navigation links -->
+                <ul>
+                    <li><img src="Images/home.svg" alt="home">Home</li>
+                    <li><img src="Images/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <!-- Library section -->
+            <div class="library">
+                <!-- Library header -->
+                <div class="library-header">
+                    <div class="library-header-heading">
+                        <img src="Images/library.svg" alt="library">
+                        <span>Your Library</span>
+                    </div>
+                    <img src="Images/plus.svg" alt="plus">
+                </div>
+                <!-- Song list -->
+                <div class="songlist">
+                    <ul>
+                        <!-- Song items will be dynamically added here -->
+                    </ul>
+                </div>
+                <!-- Footer section -->
+                <div class="footer">
+                    <div class="footer-container">
+                        <!-- Footer options -->
+                        <div class="footer-options">
+                            <a>Legal</a>
+                            <a>Safety & Privacy Center</a>
+                            <a>Privacy Policy</a>
+                            <a>Cookies</a>
+                            <a>About Ads</a>
+                            <a>Accessibility</a>
+                        </div>
+                    </div>
+                    <!-- Language selector -->
+                    <div class="language">
+                        <button class="language-button">
+                            <img src="Images/globe.svg"> English
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right section -->
+        <div class="right">
+            <!-- Right navbar -->
+            <div class="right-navbar">
+                <!-- Navbar menu and buttons -->
+                <div class="navbar-menu">
+                    <img class="menu" src="Images/menu.svg" alt="">
+                    <div class="button1">
+                        <button class="go-back"><img src="Images/goBack.svg"></button>
+                        <button class="go-forward"><img src="Images/goForward.svg"></button>
+                    </div>
+                </div>
+                <!-- Sign up and log in buttons -->
+                <div class="button2">
+                    <button class="sign-up">Sign Up</button>
+                    <button class="log-in">Log In</button>
+                </div>
+            </div>
+            <!-- Play bar -->
+            <div class="play-bar">
+                <div class="current-song-info">
+                    <!-- Current song information will be dynamically updated here -->
+                </div>
+                <!-- Play bar buttons -->
+                <div class="play-bar-buttons">
+                    <button id="previous">
+                        <img src="Images/playbar-previous.svg">
+                    </button>
+                    <button id="play">
+                        <img src="Images/playbar-play.svg">
+                    </button>
+                    <button class="hide" id="pause">
+                        <img src="Images/playbar-pause.svg">
+                    </button>
+                    <button id="next">
+                        <img src="Images/playbar-next.svg">
+                    </button>
+                </div>
+                <!-- Time and volume controls -->
+                <div class="time-volume">
+                    <div class="song-duration">
+                        <!-- Song duration will be dynamically updated here -->
+                    </div>
+                    <div class="volume">
+                        <input type="range">
+                    </div>
+                </div>    
+            </div>
+            <!-- Seek bar -->
+            <div class="seek-bar">
+                <div class="circle">
+                    <!-- Seek position indicator will be updated here -->
+                </div>
+            </div>
+            <!-- Right container -->
+            <div class="right-container">
+                <h1>Spotify Playlists</h1>
+                <!-- Card container for playlists -->
+                <div class="card-container">
+                    <!-- Playlist cards will be dynamically added here -->
+                </div>
+            </div>
+            <!-- Right footer -->
+            <div class="right-footer">
+                <div class="right-footer-container">
+                    <div class="right-footer-box">
+                        <!-- Footer links -->
+                        <div class="right-footer-links">
+                            <div class="right-footer-list1">
+                                <ul>
+                                    <p>Company</p>
+                                    <li>About</li>
+                                    <li>Jobs</li>
+                                    <li>For the Record</li>
+                                </ul>
+                            </div>
+                            <div class="right-footer-list2">
+                                <ul>
+                                    <p>Communities</p>
+                                    <li>For Artists</li>
+                                    <li>Developers</li>
+                                    <li>Advertising</li>
+                                    <li>Investors</li>
+                                    <li>Vendors</li>
+                                </ul>
+                            </div>
+                            <div class="right-footer-list3">
+                                <ul>
+                                    <p>Useful Links</p>
+                                    <li>Support</li>
+                                    <li>Free Mobile App</li>
+                                </ul>
+                            </div>
+                            <div class="right-footer-list4">
+                                <ul>
+                                    <p>Spotify Plans</p>
+                                    <li>Premium Individual</li>
+                                    <li>Premium Duo</li>
+                                    <li>Premium Family</li>
+                                    <li>Premium Student</li>
+                                    <li>Spotify Free</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social media links -->
+                        <div class="social-container">
+                            <button><img src="Images/instagram.svg"></button>
+                            <button><img src="Images/twitter.svg"></button>
+                            <button><img src="Images/facebook.svg"></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Copyright information -->
+                    <div class="copyright">
+                        © 2024 Spotify Clone - Made with ❤️ by Shubham Aggarwal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
